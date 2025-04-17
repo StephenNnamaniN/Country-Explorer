@@ -1,0 +1,89 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "19c207c30181851bdac0ea16d2e9dccc",
+    "entities": [
+      {
+        "tableName": "countries",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`countryCode` TEXT NOT NULL, `name` TEXT NOT NULL, `officialName` TEXT NOT NULL, `continent` TEXT NOT NULL, `subregion` TEXT, `flagPng` TEXT NOT NULL, `flagSvg` TEXT NOT NULL, `capital` TEXT, `population` INTEGER NOT NULL, `area` REAL NOT NULL, `languages` TEXT NOT NULL, PRIMARY KEY(`countryCode`))",
+        "fields": [
+          {
+            "fieldPath": "countryCode",
+            "columnName": "countryCode",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "officialName",
+            "columnName": "officialName",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "continent",
+            "columnName": "continent",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "subregion",
+            "columnName": "subregion",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "flagPng",
+            "columnName": "flagPng",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "flagSvg",
+            "columnName": "flagSvg",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "capital",
+            "columnName": "capital",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "population",
+            "columnName": "population",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "area",
+            "columnName": "area",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "languages",
+            "columnName": "languages",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "countryCode"
+          ]
+        }
+      }
+    ],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '19c207c30181851bdac0ea16d2e9dccc')"
+    ]
+  }
+}
