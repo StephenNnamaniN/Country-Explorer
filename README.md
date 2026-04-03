@@ -54,13 +54,15 @@ This app consumes the [RestCountries API](https://restcountries.com/).
 - **Endpoint**: `https://restcountries.com/v3.1/all`
 - **Fields used**: `name`, `flags`, `cca2`, `region`, `subregion`, `capital`, `population`, `area`, `languages`.
 
+
+
 ---
 
 ## 📸 Screenshots
 
 | Country List | Search Filter | Country Details |
 | :---: | :---: | :---: |
-| <img src="https://storage.googleapis.com/static.mimir.prd.monorepo.google.com/9782806935147551062/1.png" width="200" /> | <img src="https://storage.googleapis.com/static.mimir.prd.monorepo.google.com/9782806935147551062/2.png" width="200" /> | <img src="https://storage.googleapis.com/static.mimir.prd.monorepo.google.com/9782806935147551062/0.png" width="200" /> |
+| <img src="https://github.com/user-attachments/assets/a6e569bc-1f08-42bc-8bd5-d5456b887804" width="200" /> | <img src="https://github.com/user-attachments/assets/deed3838-ccec-4cc9-aa17-ae31c8965bf0" width="200" /> | <img src="https://github.com/user-attachments/assets/50b72e10-d34a-4a3b-8d29-63a62b365598" width="200" /> |
 
 ---
 
@@ -71,22 +73,4 @@ The project follows the **MVVM** pattern and is structured into layers:
 - **`domain`**: Contains Business Logic, Use Cases, and Repository Interfaces.
 - **`presentation`**: UI components (Jetpack Compose) and ViewModels.
 
----
 
-## 📄 License
-
-```text
-Copyright 2024 Nnamani Stephen
-
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
-```
