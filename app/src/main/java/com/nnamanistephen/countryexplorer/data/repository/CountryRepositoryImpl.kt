@@ -1,7 +1,7 @@
 package com.nnamanistephen.countryexplorer.data.repository
 
 import com.nnamanistephen.countryexplorer.data.local.CountryDao
-import com.nnamanistephen.countryexplorer.data.mapper.CountryMapper.toCountry
+import com.nnamanistephen.countryexplorer.data.mapper.toCountry
 import com.nnamanistephen.countryexplorer.data.mapper.toCountryEntityList
 import com.nnamanistephen.countryexplorer.data.mapper.toCountryList
 import com.nnamanistephen.countryexplorer.data.remote.CountryApiServices
